@@ -21,7 +21,7 @@ There are two different ways to install Windows, it depends on personal preferen
 
 
 ### Enterprise LTSC
-The direct downloads for [Windows 11 LTSC is here](https://drive.massgrave.dev/en-us_windows_11_iot_enterprise_ltsc_2024_x64_dvd_f6b14814.iso) and the [Windows 10 version here](https://drive.massgrave.dev/en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso). Since these are ISO files, you will need to burn it to a flash drive. I recommend using [Rufus](https://rufus.com) to do that. Enterprise LTSC is the best way to install as it removes additional bloat from your system and is overall more stable. LTSC does not get as many updates because it is meant for businesses who need a reliable version of Windows (think IoT devices).
+The direct downloads for LTSC versions can be found on [Massgrave's Website](https://massgrave.dev/windows_ltsc_links). Select the version and language that you prefer. The direct links are no longer available as they aren't hosted on the website, but instead direct you to a download link. Since these are ISO files, you will need to burn it to a flash drive. I recommend using [Rufus](https://rufus.com) to do that. Enterprise LTSC is the best way to install as it removes additional bloat from your system and is overall more stable. LTSC does not get as many updates because it is meant for businesses who need a reliable version of Windows (think of IoT devices).
 
 ### English (World) (Not Reccomended!)
 Before installing Windows (10/11) while you are still in the media creation tool, set your region to American (World). If you do not see the option in the media tool, you will have to do that in the setup itself (image below).  This removes any 3rd party applications and bloat that Windows tries to install on start such as Candy Crush, TikTok, and Solitare. **Some services like the Microsoft Store, the clock, and other core functions have been reported to be broken on some installations**. If you don't care about those potential risks you can continue using World.
@@ -31,7 +31,7 @@ Before installing Windows (10/11) while you are still in the media creation tool
 ## OOBE
 
 ### Local Account Setup
-In recent Windows feature updates, they force you to have an online account. They intentionally lock you out of making a local one during the initial setup but some smart people have figured out ways around this. Currently, the easiest way as of Windows 11 24H2 is to run a bypass command in the developer console. **Press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>J</kbd> to open the developer console** and then run `WinJS.Application.restart("ms-chx://LOCALONLY")`. You will now skip to the local account dialogue. Enter your desired username and password and proceed with the setup like normal. 
+In recent Windows feature updates, Microsoft forces you to have an online account and setup the computer strictly online, despite that people have found ways around it. Currently, the easiest way as of Windows 11 24H2 is to run a bypass command in the developer console. **Press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>J</kbd> to open the developer console** and then run `WinJS.Application.restart("ms-chx://LOCALONLY")`. You will now skip to the local account dialogue. Enter your desired username and password and proceed with the setup like normal. Microsoft may also patch this at anytime, and I have not tested it in a while. Feel free to make an issue on the GitHub page if this no long erworks.
 
 Make sure to turn off all of the boxes for Microsoft to collect your data, or switch them to minimal data collection. Don't worry as once we reach the desktop we can completely get rid of telemetry. Once all of that is done, you should finally be at the desktop!
 
@@ -42,9 +42,12 @@ There are a few tools and commands that you should run and install first. This p
 If you want to use my configuration file, it's in the repository and [you can download it here](https://github.com/byeoon/Proper-Windows-Reinstall/blob/master/Byeoon%20OOSU10%20Config.cfg). To apply the changes, go to `File > Import Settings` and then select the config file you just downloaded. This removes all telemetry and additional system tracking. Feel free to adjust it to your own liking. 
 
 ### Optional Quality of Life Software
-There are some other tools that may help you adjust Windows to your liking. [Winaero Tweaker](https://winaero.com) is one that I personally use on every reinstall because it has a bunch of customizable features and useful settings such as verbose logon messages and adding custom items to the context menu. Another nice quality of life customization tool that I use is *Add Name Here, I Forgot.*
+There are some other tools that may help you adjust Windows to your liking. [Winaero Tweaker](https://winaero.com) is one that I personally use on every reinstall because it has a bunch of customizable features and useful settings such as verbose logon messages and adding custom items to the context menu. Another nice quality of life customization tool that I use is *Temp*
 
 #### Customization / Themes
+
+##### StartAllBack
+Personally, I like this tool as it brings back the old taskbar and start menu. [You can download it here](https://www.startallback.com/) and configure it to your liking. Keep in mind it has a 90 day trial period, but it works similar to WinRar as it won't stop you from using the tool but remind you to get a license key and replace the background of the start menu with a frowny face. It's only $4 for one PC so I would recommend buying it and supporting the devs.
 
 
 
